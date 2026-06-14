@@ -81,9 +81,9 @@ p.body{ font-size:15px; line-height:1.75; color:#4a463f; max-width:46ch; }
 .hero .contents .n{ font-size:10px; letter-spacing:.2em; color:var(--faint); }
 .hero .contents .h{ font-size:16px; color:var(--ink); margin:3px 0 2px; }
 .hero .contents .d{ font-size:12px; color:#5b554c; }
-.hero .strip{ margin-top:auto; padding-top:22px; display:flex; gap:14px; }
-.hero .strip .cut{ flex:1; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; overflow:hidden; }
-.hero .strip .cut img{ width:100%; height:100%; object-fit:contain; mix-blend-mode:multiply; }
+.hero .strip{ margin-top:auto; padding-top:22px; display:flex; gap:12px; }
+.hero .strip .cut{ flex:1; aspect-ratio:4/5; background:#fff; border:1px solid var(--hair); border-radius:var(--r-sm); overflow:hidden; }
+.hero .strip .cut img{ width:100%; height:100%; object-fit:cover; }
 .hero .right{ position:relative; overflow:hidden; background:linear-gradient(150deg,#e7e0d2,#cfc6b6); }
 .hero .right img{ position:absolute; inset:-4%; width:108%; height:108%; object-fit:cover; }
 .hero .right .ovl{ position:absolute; left:24px; right:24px; bottom:22px; display:flex; align-items:flex-end; justify-content:space-between; }
@@ -102,15 +102,15 @@ p.body{ font-size:15px; line-height:1.75; color:#4a463f; max-width:46ch; }
 .standfirst .wrap{ max-width:760px; }
 .standfirst p{ font-size:clamp(18px,2.6vw,23px); font-weight:300; line-height:1.6; color:#33302b; margin:0; }
 
-/* ===== Closet — floating cut-outs (white-bg images, multiply blend) ===== */
-.closet-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-top:36px; align-items:end; }
+/* ===== Closet — uniform product cards ===== */
+.closet-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:36px; }
 .closet-grid .it{ text-align:center; }
-.closet-grid .tile{ aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; overflow:hidden;
-  transition:transform .7s var(--ease); }
-.closet-grid .tile img{ width:100%; height:100%; object-fit:contain; mix-blend-mode:multiply; }
-.closet-grid .it:hover .tile{ transform:translateY(-8px); }
+.closet-grid .tile{ aspect-ratio:4/5; background:#fff; border:1px solid var(--hair); border-radius:var(--r-md); overflow:hidden;
+  transition:transform .7s var(--ease), box-shadow .7s var(--ease); }
+.closet-grid .tile img{ width:100%; height:100%; object-fit:cover; }
+.closet-grid .it:hover .tile{ transform:translateY(-6px); box-shadow:0 18px 36px -20px rgba(26,26,24,.4); }
 .closet-grid .cap{ font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); margin-top:12px; }
-@media (max-width:720px){ .closet-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:720px){ .closet-grid{ grid-template-columns:repeat(2,1fr); } }
 
 /* ===== Mix ===== */
 .mix-grid{ display:grid; grid-template-columns:1fr 1fr; gap:42px; align-items:center; margin-top:24px; }
