@@ -43,6 +43,7 @@ p.body{ font-size:15px; line-height:1.75; color:#4a463f; max-width:46ch; }
 
 /* ===== Footer ===== */
 .site-foot{ text-align:center; padding:64px 0; border-top:1px solid var(--hair); }
+.site-foot .footmark{ width:30px; height:30px; margin:0 auto 16px; opacity:.9; }
 .site-foot .word{ font-size:26px; letter-spacing:.42em; margin-bottom:16px; }
 .site-foot .fnav{ font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); }
 .site-foot .fnav a:hover{ color:var(--ink); }
