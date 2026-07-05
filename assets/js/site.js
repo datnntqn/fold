@@ -30,4 +30,19 @@
       hero.style.transform = "translateY(" + (top * -0.04) + "px)";
     }, { passive: true });
   }
+
+  // Generic column parallax: any element with data-px="<factor>" drifts on scroll.
+  var pxEls = document.querySelectorAll("[data-px]");
+  if (pxEls.length && !reduce) {
+    var onPx = function () {
+      var vh = window.innerHeight;
+      pxEls.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        var center = r.top + r.height / 2 - vh / 2;
+        el.style.transform = "translateY(" + (center * parseFloat(el.getAttribute("data-px"))).toFixed(1) + "px)";
+      });
+    };
+    window.addEventListener("scroll", function () { window.requestAnimationFrame(onPx); }, { passive: true });
+    onPx();
+  }
 })();
