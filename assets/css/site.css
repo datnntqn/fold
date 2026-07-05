@@ -213,6 +213,7 @@ p.body{ font-size:15px; line-height:1.75; color:#4a463f; max-width:46ch; }
 @media (max-width:820px){
   .inside .plates{ grid-template-columns:1fr; max-width:420px; margin-left:auto; margin-right:auto; }
   .inside .col.mid{ margin-top:0; }
+  .inside .col{ transform:none !important; }
 }
 
 /* ===== The Word — TestFlight reviews (marquee) ===== */
