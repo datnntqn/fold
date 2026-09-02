@@ -22,14 +22,14 @@
   <div class="wrap">
     <div class="roman">Privacy</div>
     <h1>Privacy Policy</h1>
-    <div class="eff">Effective 29 July 2026</div>
+    <div class="eff">Effective 2 September 2026</div>
   </div>
 </div>
 
 <main class="article">
   <div class="wrap">
     <p class="tl">The short version</p>
-    <p>Fold keeps everything about your wardrobe on your device. There is no account to create, nothing is uploaded to our servers, and we never sell your data. We have no way to see your clothes, your looks, or your plans.</p>
+    <p>Fold keeps everything about your wardrobe on your device. There is no account to create, and we never sell your data. We have no way to see your clothes, your looks, or your plans. The one thing that does leave your phone is a small, anonymous count of which screens get used — never your wardrobe, and never anything that identifies you.</p>
 
     <h2>What stays on your device</h2>
     <p>Everything you add to Fold lives only on your iPhone:</p>
@@ -51,14 +51,20 @@
     <p>To separate a garment from its surroundings, Fold runs an image-segmentation model entirely on your device. That model labels each pixel of a photo as one of a fixed set of regions — for example upper-clothes, pants, dress, shoes, bag, or background. Some of those labels describe parts of a person, including a face region. Fold uses these labels for one purpose only: <em>to exclude everything that is not a garment from the cut-out.</em> The face region, along with hair, skin, and limbs, is discarded and never becomes part of any image Fold saves.</p>
     <p>The labels exist only in your device's memory for the fraction of a second it takes to produce the cut-out, and are then discarded. Nothing derived from a face is ever written to storage, included in a backup, shown in the app, or used for any other purpose.</p>
     <p><strong>Retention period: none.</strong> No face data is retained, because none is ever collected or created.</p>
-    <p><strong>Third parties: none.</strong> All processing happens on your iPhone. No image, and nothing derived from an image, is transmitted to us, to any server, or to any third party. Fold contains no analytics, advertising, or third-party SDKs that could receive such data.</p>
+    <p><strong>Third parties: none.</strong> All processing happens on your iPhone. No image, and nothing derived from an image, is transmitted to us, to any server, or to any third party. Fold contains no advertising SDKs. Its only third-party component is the analytics service described below, which receives anonymous counts of actions and nothing else — never an image, never anything derived from one, and never any face data.</p>
     <p>The photos you choose remain yours, in your own photo library, under Apple's control — Fold only reads the ones you select.</p>
 
     <h2>No tracking, no ads, no profiling</h2>
-    <p>Fold contains no advertising, no analytics SDKs, and no third-party trackers. We do not profile you and there is no feed. Suggestions are produced locally from your own wardrobe and the weather.</p>
+    <p>Fold contains no advertising and no third-party ad trackers. We do not profile you, there is no feed, and nothing about you is shared with data brokers. Suggestions are produced locally from your own wardrobe and the weather.</p>
+
+    <h2>Anonymous usage counts</h2>
+    <p>To learn which parts of Fold people actually use, the app sends a small number of anonymous events — for example that a scan finished, that a look was saved, or that the unlock screen was shown. These are counts of actions, not records of your wardrobe.</p>
+    <p>Numbers are sent in ranges rather than exact values. The app reports that your closet holds "6&ndash;9" pieces, not that it holds seven; that a scan found "4&ndash;10" garments, not which ones. <strong>No item name, brand, price, category, note or photo is ever included.</strong></p>
+    <p>The events are tagged with a random identifier created when you install Fold and stored only on your phone. It is not your device ID, not your Apple Account, and not usable to recognise you in any other app. Deleting Fold deletes it. Along with each event our analytics provider records ordinary technical context: app version, iOS version, device model, screen size, language and region.</p>
+    <p>This data is processed by <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a>, an analytics service built for this purpose. We use it only to understand how the app is used, and for nothing else.</p>
 
     <h2>Children</h2>
-    <p>Fold is a general-audience app and does not knowingly collect any information from anyone, including children, because it collects nothing.</p>
+    <p>Fold is a general-audience app. It has no account, no sign-up and no way to enter personal details, so we do not knowingly collect personal information from anyone, including children. The anonymous usage counts described above carry nothing that could identify a person of any age.</p>
 
     <h2>Contact</h2>
     <p>Questions about this policy? Email <a href="mailto:danny.ng.it@gmail.com">danny.ng.it@gmail.com</a>. If this policy changes, we will update this page and revise the effective date above.</p>
